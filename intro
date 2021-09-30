@@ -4,6 +4,7 @@
 -- Instances:
 
 local intro = Instance.new("ScreenGui")
+local ejderya = Instance.new("ImageLabel")
 local req = Instance.new("Frame")
 local loading = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
@@ -16,7 +17,6 @@ local wellcom = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
 local dragon = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
-local ejderya = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -24,10 +24,20 @@ intro.Name = "intro"
 intro.Parent = game.CoreGui
 intro.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+ejderya.Name = "ejderya"
+ejderya.Parent = intro
+ejderya.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ejderya.BackgroundTransparency = 1.000
+ejderya.Position = UDim2.new(0.479645073, 0, 0.468301266, 0)
+ejderya.Size = UDim2.new(0, 100, 0, 100)
+ejderya.Image = "http://www.roblox.com/asset/?id=7433165763"
+ejderya.ImageTransparency = 1.000
+
 req.Name = "req"
 req.Parent = intro
 req.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-req.Position = UDim2.new(0.49000001, 0, 0.532999992, 0)
+req.Position = UDim2.new(0.546999991, 0, 0.564999998, 0)
+req.Visible = false
 
 loading.Name = "loading"
 loading.Parent = req
@@ -45,7 +55,7 @@ texts.Name = "texts"
 texts.Parent = req
 texts.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 texts.Position = UDim2.new(0, 0, 0.85892117, 0)
-texts.Font = Enum.Font.SourceSans
+texts.Font = Enum.Font.GothamBold
 texts.Text = ""
 texts.TextColor3 = Color3.fromRGB(0, 0, 0)
 texts.TextSize = 14.000
@@ -62,7 +72,7 @@ ultron.Parent = req
 ultron.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 ultron.Position = UDim2.new(0.384210527, 0, 0.497925341, 0)
 ultron.Font = Enum.Font.SourceSans
-ultron.Text = "ULTRON HUB"
+ultron.Text = "5N1K HUB"
 ultron.TextColor3 = Color3.fromRGB(255, 255, 255)
 ultron.TextScaled = true
 ultron.TextSize = 14.000
@@ -92,35 +102,255 @@ dragon.Image = "http://www.roblox.com/asset/?id=7433165763"
 
 UICorner_6.Parent = dragon
 
-ejderya.Name = "ejderya"
-ejderya.Parent = intro
-ejderya.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-ejderya.BackgroundTransparency = 1.000
-ejderya.Position = UDim2.new(0.440835267, 0, 0.444444448, 0)
-ejderya.Size = UDim2.new(0, 100, 0, 100)
-ejderya.Image = "http://www.roblox.com/asset/?id=7433165763"
-ejderya.ImageTransparency = 1.000
-
 -- Scripts:
 
-local function ZXJGH_fake_script() -- texts.LocalScript 
-	local script = Instance.new('LocalScript', texts)
+local function GYPR_fake_script() -- intro.LocalScript 
+	local script = Instance.new('LocalScript', intro)
 
-	wait(8)
-	script.Parent.Text = "Join our discord server"
-	wait(5.4)
-	script.Parent.Text = "Credits To U%U!#4885"
-	wait(4.4)
-	script.Parent.Text = "Thanks for poppistadaa"
-	wait(5.4)
-	script.Parent.Text = "We have multiple game system"
-	wait(4.4)
-	script.Parent.Text = "Enjoy :P"
+	wait()
+	script.Parent.req.Visible = true
+	wait(2)
+	for i = 1, 10 do
+		script.Parent.ejderya.ImageTransparency = 1-(i/10)
+		wait()
+	end
+	wait(1)
+	for i = 1, 10 do
+		script.Parent.ejderya.ImageTransparency = i/10
+		wait()
+	end
+	wait(1.3)
+	script.Parent.req:TweenSize(UDim2.new(0, 5,0, 241))
+	script.Parent.req:TweenPosition(UDim2.new(0.481, 0,0.33, 0))
+	wait(1.7)
+	script.Parent.req:TweenSize(UDim2.new(0, 380,0, 241))
+	script.Parent.req:TweenPosition(UDim2.new(0.28, 0,0.305, 0))
+	script.Parent.req.dragon:TweenSize(UDim2.new(0, 100,0, 100))
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 27,0, 17))
+	script.Parent.req.texts:TweenSize(UDim2.new(0, 380,0, 17))
+	script.Parent.req.ultron:TweenSize(UDim2.new(0, 200,0, 50))
+	script.Parent.req.wellcom:TweenSize(UDim2.new(0, 200,0, 50))
+	script.Parent.req.wellcom.TextTransparency = 0
+	script.Parent.req.dragon:TweenPosition(UDim2.new(0.071, 0,0.249, 0))
+	script.Parent.req.loading:TweenPosition(UDim2.new(0, 0,0.929, 0))
+	script.Parent.req.texts:TweenPosition(UDim2.new(0, 0,0.859, 0))
+	script.Parent.req.ultron:TweenPosition(UDim2.new(0.384, 0,0.498, 0))
+	script.Parent.req.wellcom:TweenPosition(UDim2.new(0.384, 0,0.29, 0))
+	wait(2)
+	script.Parent.req.texts.TextTransparency = 0
+	wait(4)
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 91,0, 17))
+	wait(4)
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 183,0, 17))
+	wait(5)
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 267,0, 17))
+	wait(4)
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 333,0, 17))
+	wait(5)
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 380,0, 17))
+	wait(3)
+	script.Parent.req.dragon:TweenSize(UDim2.new(0, 0,0, 0))
+	script.Parent.req.loading:TweenSize(UDim2.new(0, 0,0, 0))
+	script.Parent.req.texts:TweenSize(UDim2.new(0, 0,0, 0))
+	script.Parent.req.ultron:TweenSize(UDim2.new(0, 0,0, 0))
+	script.Parent.req.wellcom:TweenSize(UDim2.new(0, 0,0, 0))
+	script.Parent.req.wellcom.TextTransparency = 1
+	script.Parent.req.texts.TextTransparency = 1
+	script.Parent.req:TweenSize(UDim2.new(0, 5,0, 241))
+	script.Parent.req:TweenPosition(UDim2.new(0.481, 0,0.33, 0))
+	wait(1)
+	script.Parent.req:TweenPosition(UDim2.new(0.49, 0,0.533, 0))
+	script.Parent.req:TweenSize(UDim2.new(0, 0,0, 0))
+	wait(1)
+	for i = 1, 10 do
+		script.Parent.ejderya.ImageTransparency = 1-(i/10)
+		wait()
+	end
+	wait(1)
+	for i = 1, 10 do
+		script.Parent.ejderya.ImageTransparency = i/10
+		wait()
+	end
 	
 	
 end
-coroutine.wrap(ZXJGH_fake_script)()
-local function QTFJGE_fake_script() -- texts.RainbowText 
+coroutine.wrap(GYPR_fake_script)()
+local function NKSQ_fake_script() -- ejderya.Make GUI Draggable 
+	local script = Instance.new('LocalScript', ejderya)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(NKSQ_fake_script)()
+local function NAPAKB_fake_script() -- texts.LocalScript 
+	local script = Instance.new('LocalScript', texts)
+
+	wait(11)
+	script.Parent.Text = "T"
+	wait(0.1)
+	script.Parent.Text = "Th"
+	wait(0.1)
+	script.Parent.Text = "Thi"
+	wait(0.1)
+	script.Parent.Text = "This"
+	wait(0.1)
+	script.Parent.Text = "This i"
+	wait(0.1)
+	script.Parent.Text = "This is"
+	wait(0.1)
+	script.Parent.Text = "This is T"
+	wait(0.1)
+	script.Parent.Text = "This is Tu"
+	wait(0.1)
+	script.Parent.Text = "This is Tur"
+	wait(0.1)
+	script.Parent.Text = "This is Turk"
+	wait(0.1)
+	script.Parent.Text = "This is Turki"
+	wait(0.1)
+	script.Parent.Text = "This is Turkis"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish "
+	wait(0.1)
+	script.Parent.Text = "This is Turkish S"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish Sc"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish Scr"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish Scri"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish Scrip"
+	wait(0.1)
+	script.Parent.Text = "This is Turkish Script"
+	wait(4)
+	script.Parent.Text = "C"
+	wait(0.1)
+	script.Parent.Text = "Cr"
+	wait(0.1)
+	script.Parent.Text = "Cre"
+	wait(0.1)
+	script.Parent.Text = "Cred"
+	wait(0.1)
+	script.Parent.Text = "Credi"
+	wait(0.1)
+	script.Parent.Text = "Credit"
+	wait(0.1)
+	script.Parent.Text = "Credits"
+	wait(0.1)
+	script.Parent.Text = "Credits "
+	wait(0.1)
+	script.Parent.Text = "Credits T"
+	wait(0.1)
+	script.Parent.Text = "Credits To"
+	wait(0.1)
+	script.Parent.Text = "Credits To "
+	wait(0.1)
+	script.Parent.Text = "Credits To H"
+	wait(0.1)
+	script.Parent.Text = "Credits To Hz"
+	wait(0.1)
+	script.Parent.Text = "Credits To HzE"
+	wait(0.1)
+	script.Parent.Text = "Credits To HzEg"
+	wait(0.1)
+	script.Parent.Text = "Credits To HzEge"
+	wait(3)
+	script.Parent.Text = "S"
+	wait(0.1)
+	script.Parent.Text = "Su"
+	wait(0.1)
+	script.Parent.Text = "Sub"
+	wait(0.1)
+	script.Parent.Text = "Subs"
+	wait(0.1)
+	script.Parent.Text = "Subsc"
+	wait(0.1)
+	script.Parent.Text = "Subscr"
+	wait(0.1)
+	script.Parent.Text = "Subscri"
+	wait(0.1)
+	script.Parent.Text = "Subscrib"
+	wait(0.1)
+	script.Parent.Text = "Subscribe"
+	wait(0.1)
+	script.Parent.Text = "Subscribe "
+	wait(0.1)
+	script.Parent.Text = "Subscribe t"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to "
+	wait(0.1)
+	script.Parent.Text = "Subscribe to m"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to me"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to me "
+	wait(0.1)
+	script.Parent.Text = "Subscribe to me p"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to me pl"
+	wait(0.1)
+	script.Parent.Text = "Subscribe to me pls"
+	wait(5.4)
+	script.Parent.Text = "E"
+	wait(0.1)
+	script.Parent.Text = "En"
+	wait(0.1)
+	script.Parent.Text = "Enj"
+	wait(0.1)
+	script.Parent.Text = "Enjo"
+	wait(0.1)
+	script.Parent.Text = "Enjoy"
+	wait(0.1)
+	script.Parent.Text = "Enjoy "
+	wait(0.1)
+	script.Parent.Text = "Enjoy :"
+	wait(0.1)
+	script.Parent.Text = "Enjoy :P"
+end
+coroutine.wrap(NAPAKB_fake_script)()
+local function DQVP_fake_script() -- texts.RainbowText 
 	local script = Instance.new('Script', texts)
 
 	
@@ -177,8 +407,8 @@ local function QTFJGE_fake_script() -- texts.RainbowText
 	end
 	end
 end
-coroutine.wrap(QTFJGE_fake_script)()
-local function LUGGALH_fake_script() -- req.Make GUI Draggable 
+coroutine.wrap(DQVP_fake_script)()
+local function FBFK_fake_script() -- req.Make GUI Draggable 
 	local script = Instance.new('LocalScript', req)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -220,75 +450,7 @@ local function LUGGALH_fake_script() -- req.Make GUI Draggable
 			update(input)
 		end
 	end)
+	wait(1)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
 end
-coroutine.wrap(LUGGALH_fake_script)()
-local function AAXFE_fake_script() -- intro.LocalScript 
-	local script = Instance.new('LocalScript', intro)
-
-	wait(2)
-	for i = 1, 10 do
-		script.Parent.ejderya.ImageTransparency = 1-(i/10)
-		wait()
-	end
-	wait(1)
-	for i = 1, 10 do
-		script.Parent.ejderya.ImageTransparency = i/10
-		wait()
-	end
-	wait(1.3)
-	script.Parent.req:TweenSize(UDim2.new(0, 5,0, 241))
-	script.Parent.req:TweenPosition(UDim2.new(0.481, 0,0.33, 0))
-	wait(1.6)
-	script.Parent.req:TweenSize(UDim2.new(0, 380,0, 241))
-	script.Parent.req:TweenPosition(UDim2.new(0.28, 0,0.305, 0))
-	script.Parent.req.dragon:TweenSize(UDim2.new(0, 100,0, 100))
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 27,0, 17))
-	script.Parent.req.texts:TweenSize(UDim2.new(0, 380,0, 17))
-	script.Parent.req.ultron:TweenSize(UDim2.new(0, 200,0, 50))
-	script.Parent.req.wellcom:TweenSize(UDim2.new(0, 200,0, 50))
-	script.Parent.req.wellcom.TextTransparency = 0
-	script.Parent.req.dragon:TweenPosition(UDim2.new(0.071, 0,0.249, 0))
-	script.Parent.req.loading:TweenPosition(UDim2.new(0, 0,0.929, 0))
-	script.Parent.req.texts:TweenPosition(UDim2.new(0, 0,0.859, 0))
-	script.Parent.req.ultron:TweenPosition(UDim2.new(0.384, 0,0.498, 0))
-	script.Parent.req.wellcom:TweenPosition(UDim2.new(0.384, 0,0.29, 0))
-	wait(2)
-	script.Parent.req.texts.TextTransparency = 0
-	wait(4)
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 91,0, 17))
-	wait(4)
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 183,0, 17))
-	wait(5)
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 267,0, 17))
-	wait(4)
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 333,0, 17))
-	wait(5)
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 380,0, 17))
-	wait(3)
-	script.Parent.req.dragon:TweenSize(UDim2.new(0, 0,0, 0))
-	script.Parent.req.loading:TweenSize(UDim2.new(0, 0,0, 0))
-	script.Parent.req.texts:TweenSize(UDim2.new(0, 0,0, 0))
-	script.Parent.req.ultron:TweenSize(UDim2.new(0, 0,0, 0))
-	script.Parent.req.wellcom:TweenSize(UDim2.new(0, 0,0, 0))
-	script.Parent.req.wellcom.TextTransparency = 1
-	script.Parent.req.texts.TextTransparency = 1
-	script.Parent.req:TweenSize(UDim2.new(0, 5,0, 241))
-	script.Parent.req:TweenPosition(UDim2.new(0.481, 0,0.33, 0))
-	wait(1)
-	script.Parent.req:TweenPosition(UDim2.new(0.49, 0,0.533, 0))
-	script.Parent.req:TweenSize(UDim2.new(0, 0,0, 0))
-	wait(1)
-	for i = 1, 10 do
-		script.Parent.ejderya.ImageTransparency = 1-(i/10)
-		wait()
-	end
-	wait(1)
-	for i = 1, 10 do
-		script.Parent.ejderya.ImageTransparency = i/10
-		wait()
-	end
-	
-	
-end
-loadstring(game:HttpGet('https://github.com/cihonemm/UL/blob/main/detector'))()
-coroutine.wrap(AAXFE_fake_script)()
+coroutine.wrap(FBFK_fake_script)()
