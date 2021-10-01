@@ -1,5 +1,5 @@
 if game.PlaceId == 855499080 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/intro'))()
 else
-print("yuklendi lan oc"
+print("xd")
 end
