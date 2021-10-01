@@ -104,7 +104,7 @@ UICorner_6.Parent = dragon
 
 -- Scripts:
 
-local function GYPR_fake_script() -- intro.LocalScript 
+local function XFTW_fake_script() -- intro.LocalScript 
 	local script = Instance.new('LocalScript', intro)
 
 	wait()
@@ -171,11 +171,13 @@ local function GYPR_fake_script() -- intro.LocalScript
 		script.Parent.ejderya.ImageTransparency = i/10
 		wait()
 	end
+	wait(1)
+	script.Parent.req:Destroy()
 	
 	
 end
-coroutine.wrap(GYPR_fake_script)()
-local function NKSQ_fake_script() -- ejderya.Make GUI Draggable 
+coroutine.wrap(XFTW_fake_script)()
+local function DDKJ_fake_script() -- ejderya.Make GUI Draggable 
 	local script = Instance.new('LocalScript', ejderya)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -218,8 +220,8 @@ local function NKSQ_fake_script() -- ejderya.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(NKSQ_fake_script)()
-local function NAPAKB_fake_script() -- texts.LocalScript 
+coroutine.wrap(DDKJ_fake_script)()
+local function NIDZXG_fake_script() -- texts.LocalScript 
 	local script = Instance.new('LocalScript', texts)
 
 	wait(11)
@@ -349,8 +351,8 @@ local function NAPAKB_fake_script() -- texts.LocalScript
 	wait(0.1)
 	script.Parent.Text = "Enjoy :P"
 end
-coroutine.wrap(NAPAKB_fake_script)()
-local function DQVP_fake_script() -- texts.RainbowText 
+coroutine.wrap(NIDZXG_fake_script)()
+local function LULL_fake_script() -- texts.RainbowText 
 	local script = Instance.new('Script', texts)
 
 	
@@ -407,8 +409,8 @@ local function DQVP_fake_script() -- texts.RainbowText
 	end
 	end
 end
-coroutine.wrap(DQVP_fake_script)()
-local function FBFK_fake_script() -- req.Make GUI Draggable 
+coroutine.wrap(LULL_fake_script)()
+local function KTHT_fake_script() -- req.Make GUI Draggable 
 	local script = Instance.new('LocalScript', req)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -450,7 +452,10 @@ local function FBFK_fake_script() -- req.Make GUI Draggable
 			update(input)
 		end
 	end)
-	wait(1)
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
 end
-coroutine.wrap(FBFK_fake_script)()
+		
+coroutine.wrap(KTHT_fake_script)()
+
+wait(37)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
+		coroutine.wrap(KTHT_fake_script)()
