@@ -1,0 +1,241 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local leakedgames = Instance.new("ScreenGui")
+local mein = Instance.new("Frame")
+local zetyu = Instance.new("Frame")
+local serius = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local Loadstringopen = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+leakedgames.Name = "leakedgames"
+leakedgames.Parent = game.CoreGui
+leakedgames.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mein.Name = "mein"
+mein.Parent = leakedgames
+mein.Active = true
+mein.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+mein.BackgroundTransparency = 1.000
+mein.Position = UDim2.new(0.296983719, 0, 0.352826446, 0)
+mein.Size = UDim2.new(0, 350, 0, 150)
+
+zetyu.Name = "zetyu"
+zetyu.Parent = mein
+zetyu.Active = true
+zetyu.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+zetyu.BackgroundTransparency = 1.000
+zetyu.Size = UDim2.new(0, 350, 0, 25)
+
+serius.Name = "serius"
+serius.Parent = zetyu
+serius.Active = true
+serius.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+serius.BackgroundTransparency = 1.000
+serius.Selectable = true
+serius.Size = UDim2.new(0, 26, 0, 25)
+serius.Image = "http://www.roblox.com/asset/?id=7641965934"
+serius.ImageTransparency = 1.000
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = serius
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = zetyu
+
+close.Name = "close"
+close.Parent = zetyu
+close.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.942857146, 0, 0.0799999982, 0)
+close.Size = UDim2.new(0, 20, 0, 20)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextTransparency = 1.000
+close.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = close
+
+UICorner_4.CornerRadius = UDim.new(0, 6)
+UICorner_4.Parent = mein
+
+Loadstringopen.Name = "Loadstringopen"
+Loadstringopen.Parent = mein
+Loadstringopen.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+Loadstringopen.BackgroundTransparency = 1.000
+Loadstringopen.Position = UDim2.new(0, 15, 0, 37)
+Loadstringopen.Size = UDim2.new(0, 320, 0, 100)
+Loadstringopen.Font = Enum.Font.Oswald
+Loadstringopen.Text = "Skywars"
+Loadstringopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loadstringopen.TextScaled = true
+Loadstringopen.TextSize = 73.000
+Loadstringopen.TextTransparency = 1.000
+Loadstringopen.TextWrapped = true
+
+UICorner_5.Parent = Loadstringopen
+
+-- Scripts:
+
+local function POVQY_fake_script() -- leakedgames.LocalScript 
+	local script = Instance.new('LocalScript', leakedgames)
+
+	wait(3)
+	for i = 1, 10 do
+		script.Parent.mein.BackgroundTransparency = 1-(i/10)
+		script.Parent.mein.zetyu.BackgroundTransparency = 1-(i/10)
+		script.Parent.mein.Loadstringopen.BackgroundTransparency = 1-(i/10)
+		script.Parent.mein.zetyu.close.BackgroundTransparency = 1-(i/10)
+		script.Parent.mein.zetyu.serius.ImageTransparency = 1-(i/10)
+		script.Parent.mein.zetyu.close.TextTransparency = 1-(i/10)
+		script.Parent.mein.Loadstringopen.TextTransparency = 1-(i/10)
+		wait()
+	end
+
+	script.Parent.mein.zetyu.close.MouseButton1Down:Connect(function()
+		for i = 1, 10 do
+			script.Parent.mein.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.BackgroundTransparency = i/10
+			script.Parent.mein.Loadstringopen.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.close.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.serius.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.serius.ImageTransparency = i/10
+			script.Parent.mein.zetyu.close.TextTransparency = i/10
+			script.Parent.mein.Loadstringopen.TextTransparency = i/10
+			wait()
+		end
+	end)
+
+	script.Parent.mein.Loadstringopen.MouseButton1Down:Connect(function()
+		for i = 1, 10 do
+			script.Parent.mein.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.BackgroundTransparency = i/10
+			script.Parent.mein.Loadstringopen.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.close.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.serius.BackgroundTransparency = i/10
+			script.Parent.mein.zetyu.serius.ImageTransparency = i/10
+			script.Parent.mein.zetyu.close.TextTransparency = i/10
+			script.Parent.mein.Loadstringopen.TextTransparency = i/10
+			wait()
+		end
+	end)
+
+
+
+	
+end
+coroutine.wrap(POVQY_fake_script)()
+local function CJPML_fake_script() -- Loadstringopen.RainbowText 
+	local script = Instance.new('Script', Loadstringopen)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,k/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	end
+end
+coroutine.wrap(CJPML_fake_script)()
+local function AQJA_fake_script() -- mein.Make GUI Draggable 
+	local script = Instance.new('LocalScript', mein)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(AQJA_fake_script)()
