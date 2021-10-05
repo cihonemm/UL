@@ -85,6 +85,9 @@ Loadstringopen.TextScaled = true
 Loadstringopen.TextSize = 73.000
 Loadstringopen.TextTransparency = 1.000
 Loadstringopen.TextWrapped = true
+loadstringopen.MouseButton1Down:Connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
+end)
 
 UICorner_5.Parent = Loadstringopen
 
