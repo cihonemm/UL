@@ -85,18 +85,15 @@ Loadstringopen.TextScaled = true
 Loadstringopen.TextSize = 73.000
 Loadstringopen.TextTransparency = 1.000
 Loadstringopen.TextWrapped = true
-loadstringopen.MouseButton1Down:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/sky'))()
-end)
 
 UICorner_5.Parent = Loadstringopen
 
 -- Scripts:
 
-local function POVQY_fake_script() -- leakedgames.LocalScript 
+local function NSOSAC_fake_script() -- leakedgames.LocalScript 
 	local script = Instance.new('LocalScript', leakedgames)
 
-	wait(3)
+	wait(1)
 	for i = 1, 10 do
 		script.Parent.mein.BackgroundTransparency = 1-(i/10)
 		script.Parent.mein.zetyu.BackgroundTransparency = 1-(i/10)
@@ -138,10 +135,11 @@ local function POVQY_fake_script() -- leakedgames.LocalScript
 
 
 
+
 	
 end
-coroutine.wrap(POVQY_fake_script)()
-local function CJPML_fake_script() -- Loadstringopen.RainbowText 
+coroutine.wrap(NSOSAC_fake_script)()
+local function VPXG_fake_script() -- Loadstringopen.RainbowText 
 	local script = Instance.new('Script', Loadstringopen)
 
 	local text = script.Parent
@@ -197,8 +195,8 @@ local function CJPML_fake_script() -- Loadstringopen.RainbowText
 	end
 	end
 end
-coroutine.wrap(CJPML_fake_script)()
-local function AQJA_fake_script() -- mein.Make GUI Draggable 
+coroutine.wrap(VPXG_fake_script)()
+local function YIRSN_fake_script() -- mein.Make GUI Draggable 
 	local script = Instance.new('LocalScript', mein)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -241,4 +239,4 @@ local function AQJA_fake_script() -- mein.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(AQJA_fake_script)()
+coroutine.wrap(YIRSN_fake_script)()
