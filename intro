@@ -253,6 +253,8 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 		script.Parent.image.ImageTransparency = i/10
 		wait()
 	end
+	wait(1)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/intro2'))()
 	
 end
 coroutine.wrap(UNZJJE_fake_script)()
