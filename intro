@@ -226,7 +226,7 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 	script.Parent.main.texts.Text = "Scripts By Mr.Fluppy and HzEge"
 	wait(4)
 	script.Parent.main.Loading:TweenSize(UDim2.new(0, 399,0, 27))
-	script.Parent.main.texts.Text = "Animation made by Mr.Fluppy"
+	script.Parent.main.texts.Text = "Music by Mr.Fluppy"
 	wait(2)
 	script.Parent.main.resim:TweenSizeAndPosition(UDim2.new(0, 0,0, 0), UDim2.new(0.236, 0,0.504, 0))
 	script.Parent.main.Loading:TweenSizeAndPosition(UDim2.new(0, 0,0, 0), UDim2.new(0, 0,1, 0))
