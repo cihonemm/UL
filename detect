@@ -1,12 +1,1 @@
-if game.PlaceId == 283721918 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/intro'))()
-else
-print("ez")
-end
-
-if game.PlaceId == 855499080 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/intro'))()
-else
-print("xde")
-end
 
