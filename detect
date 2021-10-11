@@ -1,3 +1,6 @@
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/games'))()
+
 if game.PlaceId == 855499080 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/intro'))()
 else
@@ -9,3 +12,5 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/test
 else
 print("hard")
 end
+
+
