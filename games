@@ -1,0 +1,172 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local james = Instance.new("Frame")
+local textgames = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local games = Instance.new("ScrollingFrame")
+local Skywars = Instance.new("ImageLabel")
+local Test = Instance.new("ImageLabel")
+local sky = Instance.new("TextLabel")
+local testi = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ez = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local wq = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+james.Name = "james"
+james.Parent = ScreenGui
+james.Active = true
+james.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+james.BackgroundTransparency = 0.100
+james.Position = UDim2.new(-1, 0, 0, 0)
+james.Size = UDim2.new(0, 281, 0, 543)
+
+textgames.Name = "textgames"
+textgames.Parent = james
+textgames.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+textgames.Position = UDim2.new(0.0308370087, 0, 0.0159045719, 0)
+textgames.Size = UDim2.new(0, 259, 0, 50)
+textgames.Font = Enum.Font.PermanentMarker
+textgames.Text = "Supported Games!"
+textgames.TextColor3 = Color3.fromRGB(255, 255, 255)
+textgames.TextScaled = true
+textgames.TextSize = 14.000
+textgames.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = textgames
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = james
+
+games.Name = "games"
+games.Parent = james
+games.Active = true
+games.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+games.BorderColor3 = Color3.fromRGB(46, 46, 46)
+games.Position = UDim2.new(0.0308370348, 0, 0.14314115, 0)
+games.Size = UDim2.new(0, 259, 0, 465)
+games.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+Skywars.Name = "Skywars"
+Skywars.Parent = games
+Skywars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skywars.Position = UDim2.new(0.065637067, 0, 0.0119284289, 0)
+Skywars.Size = UDim2.new(0, 100, 0, 100)
+Skywars.Image = "http://www.roblox.com/asset/?id=7592201699"
+
+Test.Name = "Test"
+Test.Parent = games
+Test.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Test.Position = UDim2.new(0.065637067, 0, 0.115970843, 0)
+Test.Size = UDim2.new(0, 100, 0, 100)
+Test.Image = "http://www.roblox.com/asset/?id=7711488187"
+
+sky.Name = "sky"
+sky.Parent = games
+sky.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+sky.BorderColor3 = Color3.fromRGB(60, 60, 60)
+sky.Position = UDim2.new(0.517374516, 0, 0.0121880621, 0)
+sky.Size = UDim2.new(0, 98, 0, 18)
+sky.Font = Enum.Font.SourceSans
+sky.Text = "Skywars"
+sky.TextColor3 = Color3.fromRGB(255, 255, 255)
+sky.TextScaled = true
+sky.TextSize = 14.000
+sky.TextStrokeColor3 = Color3.fromRGB(255, 85, 0)
+sky.TextStrokeTransparency = 0.000
+sky.TextWrapped = true
+
+testi.Name = "testi"
+testi.Parent = games
+testi.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+testi.BorderColor3 = Color3.fromRGB(60, 60, 60)
+testi.Position = UDim2.new(0.540540516, 0, 0.115567781, 0)
+testi.Size = UDim2.new(0, 98, 0, 18)
+testi.Font = Enum.Font.SourceSans
+testi.Text = "Test"
+testi.TextColor3 = Color3.fromRGB(186, 62, 0)
+testi.TextScaled = true
+testi.TextSize = 14.000
+testi.TextStrokeTransparency = 0.000
+testi.TextWrapped = true
+
+TextLabel.Parent = games
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+TextLabel.Position = UDim2.new(0.517374516, 0, 0.0237137303, 0)
+TextLabel.Size = UDim2.new(0, 98, 0, 71)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Creator:Mr.Fluppy"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_3.Parent = TextLabel
+
+TextLabel_2.Parent = games
+TextLabel_2.Active = true
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+TextLabel_2.Position = UDim2.new(0.540540516, 0, 0.127093449, 0)
+TextLabel_2.Size = UDim2.new(0, 98, 0, 71)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Creator:Mr.Fluppy"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_4.Parent = TextLabel_2
+
+ez.Name = "ez"
+ez.Parent = games
+ez.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ez.Position = UDim2.new(0.471042484, 0, 0.116012923, 0)
+ez.Size = UDim2.new(0, 14, 0, 100)
+ez.Font = Enum.Font.SourceSans
+ez.Text = ":"
+ez.TextColor3 = Color3.fromRGB(255, 255, 255)
+ez.TextScaled = true
+ez.TextSize = 14.000
+ez.TextWrapped = true
+
+UICorner_5.Parent = ez
+
+wq.Name = "wq"
+wq.Parent = games
+wq.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+wq.Position = UDim2.new(0.451737463, 0, 0.0119705126, 0)
+wq.Size = UDim2.new(0, 14, 0, 100)
+wq.Font = Enum.Font.SourceSans
+wq.Text = ":"
+wq.TextColor3 = Color3.fromRGB(255, 255, 255)
+wq.TextScaled = true
+wq.TextSize = 14.000
+wq.TextWrapped = true
+
+UICorner_6.Parent = wq
+
+-- Scripts:
+
+local function ISBKVLY_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(ISBKVLY_fake_script)()
