@@ -166,7 +166,11 @@ UICorner_6.Parent = wq
 local function ISBKVLY_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
-	print("Hello world!")
+	script.Parent.james:TweenPosition(UDim2.new(-0, 0,0, 0))
+	wait(14)
+	script.Parent.james:TweenPosition(UDim2.new(-1, 0,0, 0))
+	wait(1)
+	script.Parent.james:Destroy()
 	
 end
 coroutine.wrap(ISBKVLY_fake_script)()
