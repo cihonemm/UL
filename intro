@@ -174,6 +174,50 @@ local function TSSDMQ_fake_script() -- texts.RainbowText
 	end
 end
 coroutine.wrap(TSSDMQ_fake_script)()
+
+--Dragifylooool
+local function UISU_fake_script() -- Main.Dragify 
+	local script = Instance.new('LocalScript',  main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+
+	dragify(script.Parent)
+end
+coroutine.wrap(UISU_fake_script)()
 local function UNZJJE_fake_script() -- Intro.LocalScript 
 	local script = Instance.new('LocalScript', Intro)
 
@@ -194,7 +238,6 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 		wait()
 	end
 	wait(1)
-	script.Parent.main.Draggable = true
 	script.Parent.main:TweenSizeAndPosition(UDim2.new(0, 402,0, 256), UDim2.new(0.266, 0,0.249, 0))
 	wait(0.2)
 	script.Parent.main.resim.Visible = true
@@ -223,7 +266,7 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 	script.Parent.main.texts.Text = "Gui By Mr.Fluppy"
 	wait(5)
 	script.Parent.main.Loading:TweenSize(UDim2.new(0, 353,0, 27))
-	script.Parent.main.texts.Text = "Scripts By Mr.Fluppy and HzEge"
+	script.Parent.main.texts.Text = "Scripts By Mr.Fluppy"
 	wait(4)
 	script.Parent.main.Loading:TweenSize(UDim2.new(0, 399,0, 27))
 	script.Parent.main.texts.Text = "Music by Mr.Fluppy"
@@ -234,7 +277,6 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 	script.Parent.main.texts:TweenSizeAndPosition(UDim2.new(1, 0,0, 0), UDim2.new(0, 0,0.904, 0))
 	script.Parent.main.welcome:TweenSizeAndPosition(UDim2.new(0, 0,0.006, 0), UDim2.new(0.761, 0,0.378, 0))
 	wait(0.6)
-	script.Parent.main.Draggable = false
 	script.Parent.main.resim:Destroy()
 	script.Parent.main.Loading:Destroy()
 	script.Parent.main.Serius:Destroy()
