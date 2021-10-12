@@ -4,7 +4,7 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local james = Instance.new("Frame")
+local gamesmainp = Instance.new("Frame")
 local textgames = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local UICorner_2 = Instance.new("UICorner")
@@ -17,29 +17,25 @@ local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local ez = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
-local wq = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-james.Name = "james"
-james.Parent = ScreenGui
-james.Active = true
-james.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-james.BackgroundTransparency = 0.100
-james.Position = UDim2.new(-1, 0, 0, 0)
-james.Size = UDim2.new(0, 281, 0, 543)
+gamesmainp.Name = "gamesmainp"
+gamesmainp.Parent = ScreenGui
+gamesmainp.Active = true
+gamesmainp.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+gamesmainp.BackgroundTransparency = 0.100
+gamesmainp.Position = UDim2.new(0.1315469, 0, 0.316103369, 0)
+gamesmainp.Size = UDim2.new(0, 414, 0, 307)
 
 textgames.Name = "textgames"
-textgames.Parent = james
+textgames.Parent = gamesmainp
 textgames.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-textgames.Position = UDim2.new(0.0308370087, 0, 0.0159045719, 0)
-textgames.Size = UDim2.new(0, 259, 0, 50)
+textgames.Position = UDim2.new(-0.00207033008, 0, -0.00325732888, 0)
+textgames.Size = UDim2.new(0, 414, 0, 55)
 textgames.Font = Enum.Font.PermanentMarker
 textgames.Text = "Supported Games!"
 textgames.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -51,37 +47,37 @@ UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = textgames
 
 UICorner_2.CornerRadius = UDim.new(0, 4)
-UICorner_2.Parent = james
+UICorner_2.Parent = gamesmainp
 
 games.Name = "games"
-games.Parent = james
+games.Parent = gamesmainp
 games.Active = true
 games.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 games.BorderColor3 = Color3.fromRGB(46, 46, 46)
-games.Position = UDim2.new(0.0308370348, 0, 0.14314115, 0)
-games.Size = UDim2.new(0, 259, 0, 465)
-games.CanvasSize = UDim2.new(0, 0, 3, 0)
+games.Position = UDim2.new(0, 0, 0.148682237, 0)
+games.Size = UDim2.new(0, 413, 0, 261)
+games.CanvasSize = UDim2.new(0, 0, 5, 0)
 
 Skywars.Name = "Skywars"
 Skywars.Parent = games
 Skywars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Skywars.Position = UDim2.new(0.065637067, 0, 0.0119284289, 0)
-Skywars.Size = UDim2.new(0, 100, 0, 100)
+Skywars.Position = UDim2.new(0.0197433643, 0, 0.0127139147, 0)
+Skywars.Size = UDim2.new(0, 140, 0, 126)
 Skywars.Image = "http://www.roblox.com/asset/?id=7592201699"
 
 Test.Name = "Test"
 Test.Parent = games
 Test.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Test.Position = UDim2.new(0.065637067, 0, 0.115970843, 0)
-Test.Size = UDim2.new(0, 100, 0, 100)
+Test.Position = UDim2.new(0.0191157181, 0, 0.134748667, 0)
+Test.Size = UDim2.new(0, 140, 0, 126)
 Test.Image = "http://www.roblox.com/asset/?id=7711488187"
 
 sky.Name = "sky"
 sky.Parent = games
 sky.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 sky.BorderColor3 = Color3.fromRGB(60, 60, 60)
-sky.Position = UDim2.new(0.517374516, 0, 0.0121880621, 0)
-sky.Size = UDim2.new(0, 98, 0, 18)
+sky.Position = UDim2.new(0.408716828, 0, 0.0126067102, 0)
+sky.Size = UDim2.new(0, 175, 0, 42)
 sky.Font = Enum.Font.SourceSans
 sky.Text = "Skywars"
 sky.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -95,8 +91,8 @@ testi.Name = "testi"
 testi.Parent = games
 testi.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 testi.BorderColor3 = Color3.fromRGB(60, 60, 60)
-testi.Position = UDim2.new(0.540540516, 0, 0.115567781, 0)
-testi.Size = UDim2.new(0, 98, 0, 18)
+testi.Position = UDim2.new(0.40647307, 0, 0.134611845, 0)
+testi.Size = UDim2.new(0, 175, 0, 42)
 testi.Font = Enum.Font.SourceSans
 testi.Text = "Test"
 testi.TextColor3 = Color3.fromRGB(186, 62, 0)
@@ -106,12 +102,11 @@ testi.TextStrokeTransparency = 0.000
 testi.TextWrapped = true
 
 TextLabel.Parent = games
-TextLabel.Active = true
 TextLabel.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-TextLabel.Position = UDim2.new(0.517374516, 0, 0.0237137303, 0)
-TextLabel.Size = UDim2.new(0, 98, 0, 71)
-TextLabel.Font = Enum.Font.Ubuntu
-TextLabel.Text = "Creator:Mr.Fluppy"
+TextLabel.Position = UDim2.new(0.408212543, 0, 0.0563954711, 0)
+TextLabel.Size = UDim2.new(0, 176, 0, 58)
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "Made By Mr.Fluppy"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -120,12 +115,11 @@ TextLabel.TextWrapped = true
 UICorner_3.Parent = TextLabel
 
 TextLabel_2.Parent = games
-TextLabel_2.Active = true
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-TextLabel_2.Position = UDim2.new(0.540540516, 0, 0.127093449, 0)
-TextLabel_2.Size = UDim2.new(0, 98, 0, 71)
-TextLabel_2.Font = Enum.Font.Ubuntu
-TextLabel_2.Text = "Creator:Mr.Fluppy"
+TextLabel_2.Position = UDim2.new(0.427536249, 0, 0.178436741, 0)
+TextLabel_2.Size = UDim2.new(0, 176, 0, 58)
+TextLabel_2.Font = Enum.Font.PatrickHand
+TextLabel_2.Text = "Made By Mr.Fluppy"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -133,44 +127,49 @@ TextLabel_2.TextWrapped = true
 
 UICorner_4.Parent = TextLabel_2
 
-ez.Name = "ez"
-ez.Parent = games
-ez.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-ez.Position = UDim2.new(0.471042484, 0, 0.116012923, 0)
-ez.Size = UDim2.new(0, 14, 0, 100)
-ez.Font = Enum.Font.SourceSans
-ez.Text = ":"
-ez.TextColor3 = Color3.fromRGB(255, 255, 255)
-ez.TextScaled = true
-ez.TextSize = 14.000
-ez.TextWrapped = true
+-- Scripts
 
-UICorner_5.Parent = ez
 
-wq.Name = "wq"
-wq.Parent = games
-wq.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-wq.Position = UDim2.new(0.451737463, 0, 0.0119705126, 0)
-wq.Size = UDim2.new(0, 14, 0, 100)
-wq.Font = Enum.Font.SourceSans
-wq.Text = ":"
-wq.TextColor3 = Color3.fromRGB(255, 255, 255)
-wq.TextScaled = true
-wq.TextSize = 14.000
-wq.TextWrapped = true
+--Dragifylooool
+local function UISU_fake_script() -- Main.Dragify 
+	local script = Instance.new('LocalScript',  gamesmainp)
 
-UICorner_6.Parent = wq
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
 
--- Scripts:
-
-local function ISBKVLY_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	script.Parent.james:TweenPosition(UDim2.new(-0, 0,0, 0))
-	wait(14)
-	script.Parent.james:TweenPosition(UDim2.new(-1, 0,0, 0))
-	wait(1)
-	script.Parent.james:Destroy()
-	
+	dragify(script.Parent)
 end
-coroutine.wrap(ISBKVLY_fake_script)()
+coroutine.wrap(UISU_fake_script)()
