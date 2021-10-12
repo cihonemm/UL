@@ -28,7 +28,7 @@ gamesmainp.Parent = ScreenGui
 gamesmainp.Active = true
 gamesmainp.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 gamesmainp.BackgroundTransparency = 0.100
-gamesmainp.Position = UDim2.new(0.1315469, 0, 0.316103369, 0)
+gamesmainp.Position = UDim2.new(-0.1315469, 0, 0.316103369, 0)
 gamesmainp.Size = UDim2.new(0, 414, 0, 307)
 
 textgames.Name = "textgames"
@@ -128,7 +128,18 @@ TextLabel_2.TextWrapped = true
 UICorner_4.Parent = TextLabel_2
 
 -- Scripts
+local function XBYODHH_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
 
+	script.Parent.gamesmainp:TweenPosition(UDim2.new(0.132, 0,0.316, 0))
+	wait(11)
+	script.Parent.gamesmainp:TweenPosition(UDim2.new(-2, 0,0.316, 0))
+	wait(1)
+	script.Parent.gamesmainp:Destroy()
+
+	
+end
+coroutine.wrap(XBYODHH_fake_script)()
 
 --Dragifylooool
 local function UISU_fake_script() -- Main.Dragify 
