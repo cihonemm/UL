@@ -254,6 +254,8 @@ local function UNZJJE_fake_script() -- Intro.LocalScript
 	end
 	wait(1)
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/UL/main/testintro2'))()
+	wait(0.1)
+	main:Destroy()
 	
 end
 coroutine.wrap(UNZJJE_fake_script)()
