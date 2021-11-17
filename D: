@@ -9066,48 +9066,82 @@ coroutine.wrap(JTEPF_fake_script)()
 local function YUAPL_fake_script() -- mainscreeenhub.mainscript 
 	local script = Instance.new('LocalScript', mainscreeenhub)
 
-	script.Parent.Parent.mainscreeenhub.ResetOnSpawn = false
+script.Parent.Parent.mainscreeenhub.ResetOnSpawn = false
 
-	script.Parent.main.Pages.BackgroundTransparency = 1
-	script.Parent.main.Pages.BorderSizePixel = 0
-	script.Parent.main.Pages.ScrollBarImageTransparency = 1
-	script.Parent.main.Pages.ScrollBarThickness = 0
-	script.Parent.main.Pages.ScrollingEnabled = false
+script.Parent.main.Pages.BackgroundTransparency = 1
+script.Parent.main.Pages.BorderSizePixel = 0
+script.Parent.main.Pages.ScrollBarImageTransparency = 1
+script.Parent.main.Pages.ScrollBarThickness = 0
+script.Parent.main.Pages.ScrollingEnabled = false
 
-	script.Parent.main.Pages.ScriptsFrame.Items.BackgroundTransparency = 1
-	script.Parent.main.Pages.ScriptsFrame.Items.BorderSizePixel = 0
-	script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarImageTransparency = 0
-	script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarImageColor3  = Color3.new(0.152941, 0.152941, 0.129412)
-	script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarThickness = 5
-	script.Parent.main.Pages.ScriptsFrame.Items.ScrollingEnabled = true
+script.Parent.main.Pages.ScriptsFrame.Items.BackgroundTransparency = 1
+script.Parent.main.Pages.ScriptsFrame.Items.BorderSizePixel = 0
+script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarImageTransparency = 0
+script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarImageColor3  = Color3.new(0.152941, 0.152941, 0.129412)
+script.Parent.main.Pages.ScriptsFrame.Items.ScrollBarThickness = 5
+script.Parent.main.Pages.ScriptsFrame.Items.ScrollingEnabled = true
 
-	script.Parent.main.Tabs.CreditsButton.MouseButton1Down:Connect(function()
-		script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(-0.002, 0,0.008, 0))
-		script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.66, 0,0.206, 0))
-	end)
+script.Parent.main.Tabs.CreditsButton.MouseButton1Down:Connect(function()
+	script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(-0.009, 0,0.002, 0))
+	script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.908, 0,0.22, 0))
+end)
 
-	script.Parent.main.Tabs.ProfileButton.MouseButton1Down:Connect(function()
-		script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(-0.002, 0,0.008, 0))
-		script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.66, 0,0.206, 0))
-	end)
+script.Parent.main.Tabs.ProfileButton.MouseButton1Down:Connect(function()
+	script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(-0.009, 0,0.002, 0))
+	script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.908, 0,0.22, 0))
+end)
 
-	script.Parent.main.Tabs.ScriptsButton.MouseButton1Down:Connect(function()
-		script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(0.501, 0,0.221, 0))
-	end)
+script.Parent.main.Tabs.ScriptsButton.MouseButton1Down:Connect(function()
+	script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(0.491, 0,0.22, 0))
+end)
 
-	script.Parent.main.Tabs.TeleportsButton.MouseButton1Down:Connect(function()
-		script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.387, 0,-0.005, 0))
-		script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(-0.002, 0,0.008, 0))
-		script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.66, 0,0.206, 0))
-	end)
+script.Parent.main.Tabs.TeleportsButton.MouseButton1Down:Connect(function()
+	script.Parent.main.Pages.CreditsFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.ProfileFrame:TweenPosition(UDim2.new(1.412, 0,0.011, 0))
+	script.Parent.main.Pages.TeleportsFrame:TweenPosition(UDim2.new(-0.009, 0,0.002, 0))
+	script.Parent.main.Pages.ScriptsFrame:TweenPosition(UDim2.new(1.908, 0,0.22, 0))
+end)
+
+cooldown = false
+open = true
+
+script.Parent.main.MainTabFrame.Music.MouseButton1Down:connect(function()
+	if cooldown == false then
+		if open == true then
+			cooldown = true
+			local music = Instance.new("Sound", game.Workspace)
+			music.SoundId = "rbxassetid://4946441639"
+			music.Looped = true
+			music.Volume = 1
+			music:Play()
+			script.Parent.main.MainTabFrame.Music.BackgroundColor3 = Color3.new(0, 1, 0)
+			open = false
+			cooldown = false
+		elseif open == false then
+			cooldown = true
+			script.Parent.main.MainTabFrame.Music.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+			game.Workspace.Sound:Stop()
+			wait(1)
+			game.Workspace.Sound:Destroy()
+			open = true
+			cooldown = false
+		end
+	end
+end)
+
+script.Parent.main.MainTabFrame.Close.MouseButton1Down:Connect(function()
+	script.Parent.main:Destroy()
+	game.Workspace.Sound:Destroy()
+end)
+
+
 
 	cooldown = false
 	open = true
